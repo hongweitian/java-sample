@@ -8,9 +8,7 @@ import java.lang.annotation.Target;
 
 @Documented
 @Target(ElementType.TYPE)
-// 用来定义你的注解将应用在什么地方,本处应用为方法
-@Retention(RetentionPolicy.SOURCE)
-// 用来定义该注解在哪一个级别可用,在源代码中(source)类文件中(class)或者运行时(runtime)
+@Retention(RetentionPolicy.CLASS)
 public @interface GenTestObj {
 	String value();
 }
